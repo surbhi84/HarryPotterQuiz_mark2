@@ -112,3 +112,13 @@ function qna(q, a) {
   }
   console.log(chalk.yellow.italic.bold("your score:" + score));
 }
+
+function qnadisplay(qarr) {
+  for (i = 0; i < qarr.length; i++)
+    if (score >= 0) {
+      qna(qarr[i].ques, qarr[i].ans);
+    } else {
+      console.log(chalk.red.bold("\nYou can't play further"));
+      break;
+    }
+}
