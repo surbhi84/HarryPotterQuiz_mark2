@@ -76,6 +76,7 @@ function choice() {
     console.log("invalid choice");
   }
 }
+
 function intro() {
   console.log(chalk.blue.bold("Welcome wizards to the HARRY POTTER QUIZ."));
   var a = name();
@@ -97,4 +98,17 @@ function intro() {
   );
 
   choice();
+}
+
+function qna(q, a) {
+  var userAnswer = readlineSync.question(chalk.cyan.bold("\n" + q));
+
+  if (userAnswer.toLowerCase() === a.toLowerCase()) {
+    console.log(chalk.green("Right answer! You get 3 points."));
+    score = score + 3;
+  } else {
+    console.log(chalk.red("Wrong answer! You lose 2 points."));
+    score = score - 2;
+  }
+  console.log(chalk.yellow.italic.bold("your score:" + score));
 }
