@@ -122,3 +122,10 @@ function qnadisplay(qarr) {
       break;
     }
 }
+
+intro();
+
+console.log(
+  chalk.blue.bold("\nyour FINAL SCORE is " + score) +
+    chalk.yellow.bold("\nThank you for playing!")
+);
