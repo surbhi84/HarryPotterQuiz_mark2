@@ -12,6 +12,7 @@ QuizMe is a CLI Quiz app that asks you questions from the fantasy fiction series
 
 ## Technologies
 * JavaScript
+* Nodejs
 
 
 ## Live link
