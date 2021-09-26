@@ -58,7 +58,7 @@ var qarray2 = [
     ques: "Harry played quidditch with which role?",
     ans: "seeker",
   }),
-  (q6 = {
+  (q7 = {
     ques: "Was harry a muggle hater?",
     ans: "no",
   }),
