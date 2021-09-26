@@ -23,6 +23,14 @@ var qarray1 = [
     ques: "In which year harry became the captain of the quidditch?\n a) 4rth\n b) 6th\n c) 5th",
     ans: "b",
   }),
+  (q6 = {
+    ques: "Why did voldemort wanted to kill harry?\n a) beacause of harry's parents\n b) because of a prophecy\n c) because harry was a powerful wizard",
+    ans: "b",
+  }),
+  (q7 = {
+    ques: "how many innocent lives were saved by harry and his friends in prisoner of the azkaban?\n a) 1\n b) 2\n c) 3",
+    ans: "b",
+  }),
 ];
 
 var qarray2 = [
@@ -45,6 +53,14 @@ var qarray2 = [
   (q5 = {
     ques: "who dropped Harry at his aunts house when he was one?",
     ans: "hagrid",
+  }),
+  (q6 = {
+    ques: "Harry played quidditch with which role?",
+    ans: "seeker",
+  }),
+  (q6 = {
+    ques: "Was harry a muggle hater?",
+    ans: "no",
   }),
 ];
 
@@ -115,7 +131,7 @@ function qna(q, a) {
 
 function qnadisplay(qarr) {
   for (i = 0; i < qarr.length; i++)
-    if (score >= 0) {
+    if (score >= -10) {
       qna(qarr[i].ques, qarr[i].ans);
     } else {
       console.log(chalk.red.bold("\nYou can't play further"));
